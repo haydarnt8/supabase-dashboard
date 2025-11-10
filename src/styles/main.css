@@ -1,0 +1,146 @@
+/* Import Cairo font for Arabic support */
+@import "@fontsource/cairo/arabic.css";
+
+/* Apply Cairo font globally */
+* {
+  font-family: "Cairo", sans-serif !important;
+}
+
+/* Ensure proper RTL text rendering */
+body {
+  font-family: "Cairo", sans-serif;
+  direction: rtl;
+}
+
+/* Modern card styling */
+.v-card {
+  border-radius: 12px !important;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+/* Clean card variant */
+.glass-card {
+  background: rgba(255, 255, 255, 0.98) !important;
+  border: 1px solid rgba(0, 0, 0, 0.08) !important;
+}
+
+/* Enhanced button styling */
+.v-btn {
+  border-radius: 8px !important;
+  text-transform: none !important;
+  letter-spacing: 0 !important;
+  font-weight: 600 !important;
+}
+
+/* Primary button */
+.v-btn--variant-elevated.bg-primary,
+.v-btn.bg-primary {
+  background: #0ea5e9 !important;
+  box-shadow: 0 2px 8px rgba(14, 165, 233, 0.2) !important;
+}
+
+.v-btn--variant-elevated.bg-primary:hover,
+.v-btn.bg-primary:hover {
+  background: #0284c7 !important;
+  box-shadow: 0 4px 12px rgba(14, 165, 233, 0.25) !important;
+}
+
+/* Modern input fields */
+.v-field {
+  border-radius: 8px !important;
+}
+
+.v-field--focused {
+  box-shadow: 0 0 0 2px rgba(14, 165, 233, 0.15) !important;
+}
+
+/* Enhanced chips */
+.v-chip {
+  border-radius: 6px !important;
+  font-weight: 600 !important;
+}
+
+/* Dialog styling */
+.v-dialog .v-card {
+  border-radius: 12px !important;
+}
+
+/* Alert styling */
+.v-alert {
+  border-radius: 8px !important;
+  border-left: 4px solid !important;
+}
+
+/* Progress circular */
+.v-progress-circular {
+  animation: spin 1s linear infinite;
+}
+
+
+/* Snackbar styling */
+.v-snackbar {
+  border-radius: 8px !important;
+}
+
+/* Enhanced breadcrumbs */
+.v-breadcrumbs {
+  padding: 8px 16px !important;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0ea5e9;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0284c7;
+}
+
+/* Header text styling */
+.gradient-header {
+  color: #0ea5e9;
+  font-weight: 700;
+}
+
+/* Card title enhancement */
+.v-card-title {
+  font-weight: 600 !important;
+  font-size: 1.125rem !important;
+}
+
+/* Page headers */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--v-theme-on-background) !important;
+}
+
+/* Form label spans */
+.v-form span.text-subtitle-2 {
+  color: var(--v-theme-on-surface) !important;
+}
+
+
+/* Loading state */
+.v-main {
+  min-height: 100vh;
+}
+
+/* Enhanced text fields in dark mode */
+.v-theme--dark .v-field {
+  background: rgba(255, 255, 255, 0.05) !important;
+}
+
+/* Enhanced text fields in light mode */
+.v-theme--light .v-field {
+  background: rgba(0, 0, 0, 0.02) !important;
+}
